@@ -37,9 +37,11 @@ impl Endpoint {
 fn main() {
     let mut config_path = env::current_dir().unwrap();
 
-    let entries = std::fs::read_dir(config_path.clone()).unwrap()
-      .map(|res| res.map(|e| e.path()))
-      .collect::<Result<Vec<_>, io::Error>>().unwrap();
+    let entries = std::fs::read_dir(config_path.clone())
+        .unwrap()
+        .map(|res| res.map(|e| e.path()))
+        .collect::<Result<Vec<_>, io::Error>>()
+        .unwrap();
 
     for entry in entries {
         if entry.is_file() {
@@ -50,9 +52,11 @@ fn main() {
             }
         }
     }
-    
+
     if config_path.extension() == None {
-        panic!("Your current directory should contain a yaml config file containing Mockserver prefix");
+        panic!(
+            "Your current directory should contain a yaml config file containing Mockserver prefix"
+        );
     }
 
     let config_reader = std::fs::File::open(config_path).unwrap();
@@ -80,7 +84,7 @@ fn main() {
             .iter_mut()
             .map(|value| String::from(value.as_str().unwrap()))
             .collect();
-        
+
         let response_body =
             endpoint_mapping[&serde_yaml::Value::String("response_body".into())].to_owned();
 

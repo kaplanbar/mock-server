@@ -1,11 +1,9 @@
 [package]
-authors = ["vagrant"]
+authors = ["kaplanbar"]
 edition = "2018"
 name = "mock-server"
 version = "0.1.0"
 [dependencies]
-glob = "*"
-http = "*"
-serde_json = "*"
-serde_yaml = "*"
+serde_json = "1.0.59"
+serde_yaml = "0.8.13"
 tiny_http = "0.6"
