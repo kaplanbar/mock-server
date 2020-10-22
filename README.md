@@ -4,8 +4,8 @@ Mock-server is a lightweight Rust executable to quickly run mock API server wher
 ### Tech
 
 To run Mock-server locally, you should have
-* [Rust](https://www.rust-lang.org/tools/install) - HTML enhanced for web apps!
-* [Cargo](https://crates.io/) - awesome web-based text editor
+* [Rust](https://www.rust-lang.org/tools/install)
+* [Cargo](https://crates.io/)
 
 installed on your environment.
 
