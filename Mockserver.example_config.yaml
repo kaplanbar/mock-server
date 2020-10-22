@@ -1,0 +1,17 @@
+---
+  host: "0.0.0.0:8080"
+  endpoints:
+    endpoint1:
+      path: "/"
+      allowed_methods:
+        - GET
+        - POST
+      response_body:
+        quick: "hello"
+        brown: 1
+    endpoint2:
+      path: "/hello"
+      allowed_methods:
+        - POST
+      response_body:
+        fox: "post"

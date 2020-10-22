@@ -1,0 +1,11 @@
+[package]
+authors = ["vagrant"]
+edition = "2018"
+name = "mock-server"
+version = "0.1.0"
+[dependencies]
+glob = "*"
+http = "*"
+serde_json = "*"
+serde_yaml = "*"
+tiny_http = "0.6"
