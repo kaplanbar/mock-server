@@ -14,7 +14,7 @@ installed on your environment.
 After you have installed Rust and Cargo, clone the repository.
 
 ```sh
-$ git clone 
+$ git clone https://github.com/kaplanbar/mock-server.git
 $ cargo run
 ```
 
