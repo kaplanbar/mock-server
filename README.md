@@ -20,7 +20,7 @@ $ cargo run
 
 ### Mock API Config
 
-The directory you run the Mock-server should contain a yaml configuration file with a Mockserver prefix in its name.
+The directory you run the Mock-server should contain a YAML configuration file with a Mockserver prefix in its name.
 
 (Mockserver.example_config.yaml)
 ```yaml
