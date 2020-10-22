@@ -48,8 +48,3 @@ The directory you run the Mock-server should contain a YAML configuration file w
  - Add comments
  - Add more configuration options for endpoints
  - Add details to README
-
-License
-----
-
-MIT
